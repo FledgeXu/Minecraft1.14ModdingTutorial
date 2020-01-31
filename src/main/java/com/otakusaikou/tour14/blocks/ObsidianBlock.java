@@ -9,6 +9,7 @@ public class ObsidianBlock extends Block {
         super(Properties.create(Material.ROCK)
                 .harvestLevel(3)
                 .sound(SoundType.STONE)
+                .hardnessAndResistance(5f)
         );
         this.setRegistryName("obsidian_block");
     }

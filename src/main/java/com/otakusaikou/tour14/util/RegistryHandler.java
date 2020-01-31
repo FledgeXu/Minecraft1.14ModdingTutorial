@@ -18,7 +18,7 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void onItemsRegistry(RegistryEvent.Register<Item> event){
         event.getRegistry().register(ModItems.obsidianIngot);
-        event.getRegistry().register(new BlockItem(ModBlocks.obsidianBlock, new Item.Properties())
+        event.getRegistry().register(new BlockItem(ModBlocks.obsidianBlock, new Item.Properties().group(Utils.itemGroup))
                 .setRegistryName(ModBlocks.obsidianBlock.getRegistryName())
         );
     }
