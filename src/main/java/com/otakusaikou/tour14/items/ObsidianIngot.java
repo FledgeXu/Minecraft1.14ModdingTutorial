@@ -1,4 +1,4 @@
-package com.otakusaikou.items;
+package com.otakusaikou.tour14.items;
 
 import net.minecraft.item.Item;
 
