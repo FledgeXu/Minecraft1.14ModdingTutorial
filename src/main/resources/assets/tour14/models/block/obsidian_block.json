@@ -1,6 +1,12 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "tour14:block/obsidian_block"
+    "particle": "tour14:block/obsidian_block",
+    "down": "tour14:block/obsidian_block",
+    "up": "tour14:block/obsidian_block",
+    "east": "tour14:block/obsidian_block",
+    "west": "tour14:block/obsidian_block",
+    "north": "tour14:block/obsidian_block_front",
+    "south": "tour14:block/obsidian_block"
   }
 }
