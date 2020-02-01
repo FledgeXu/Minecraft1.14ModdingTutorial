@@ -1,4 +1,4 @@
-package com.otakusaikou.tour14.tilesentities;
+package com.otakusaikou.tour14.tileentities;
 
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.tileentity.TileEntity;
