@@ -1,5 +1,7 @@
 {
   "item.tour14.obsidian_ingot": "黑曜石锭",
   "block.tour14.obsidian_block": "黑曜石块",
-  "itemGroup.tour14": "Tour14"
+  "block.tour14.counter_block": "计数方块",
+  "itemGroup.tour14": "Tour14",
+  "message.tour14.counter": "Counter: %d"
 }

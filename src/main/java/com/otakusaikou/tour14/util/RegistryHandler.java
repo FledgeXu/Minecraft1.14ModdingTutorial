@@ -2,9 +2,11 @@ package com.otakusaikou.tour14.util;
 
 import com.otakusaikou.tour14.blocks.ModBlocks;
 import com.otakusaikou.tour14.items.ModItems;
+import com.otakusaikou.tour14.tilesentities.ModTileEntitiesType;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -14,6 +16,8 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void onBlocksRegistry(RegistryEvent.Register<Block> event) {
         event.getRegistry().register(ModBlocks.obsidianBlock);
+        event.getRegistry().register(ModBlocks.counterBlock);
+
     }
     @SubscribeEvent
     public static void onItemsRegistry(RegistryEvent.Register<Item> event){
@@ -21,5 +25,13 @@ public class RegistryHandler {
         event.getRegistry().register(new BlockItem(ModBlocks.obsidianBlock, new Item.Properties().group(Utils.itemGroup))
                 .setRegistryName(ModBlocks.obsidianBlock.getRegistryName())
         );
+        event.getRegistry().register(new BlockItem(ModBlocks.counterBlock, new Item.Properties().group(Utils.itemGroup))
+            .setRegistryName(ModBlocks.counterBlock.getRegistryName())
+        );
     }
+    @SubscribeEvent
+    public static void onTileEntitiesRegistry(RegistryEvent.Register<TileEntityType<?>> event) {
+        event.getRegistry().register(ModTileEntitiesType.counterBlockTileEntityType);
+    }
+
 }

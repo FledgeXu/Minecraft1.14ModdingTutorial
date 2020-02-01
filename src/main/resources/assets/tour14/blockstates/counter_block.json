@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "tour14:block/counter_block" },
+    "facing=south": { "model": "tour14:block/counter_block", "y": 180},
+    "facing=west": { "model": "tour14:block/counter_block", "y": 270},
+    "facing=east": { "model": "tour14:block/counter_block", "y": 90},
+    "facing=up": { "model": "tour14:block/counter_block", "x": -90},
+    "facing=down": { "model": "tour14:block/counter_block", "x": 90}
+  }
+}

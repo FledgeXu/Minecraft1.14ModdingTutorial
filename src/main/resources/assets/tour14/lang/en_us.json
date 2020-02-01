@@ -1,5 +1,7 @@
 {
   "item.tour14.obsidian_ingot": "Obsidian Ingot",
   "block.tour14.obsidian_block": "Obsidian Block",
-  "itemGroup.tour14": "Tour14"
+  "block.tour14.counter_block": "Counter Block",
+  "itemGroup.tour14": "Tour14",
+  "message.tour14.counter": "Counter: %d"
 }
