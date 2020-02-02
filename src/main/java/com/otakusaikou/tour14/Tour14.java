@@ -1,10 +1,14 @@
 package com.otakusaikou.tour14;
 
+import com.otakusaikou.tour14.proxy.ClientProxy;
+import com.otakusaikou.tour14.proxy.IProxy;
+import com.otakusaikou.tour14.proxy.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -24,7 +28,9 @@ import java.util.stream.Collectors;
 public class Tour14
 {
     public static final Logger LOGGER = LogManager.getLogger();
-
+  public static final String MODID = "tour14";
+  public static IProxy proxy = DistExecutor
+        .runForDist(()->()->new ClientProxy(),()->()->new ServerProxy());
     public Tour14() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -32,5 +38,6 @@ public class Tour14
 
     private void setup(final FMLCommonSetupEvent event)
     {
+        proxy.init();
     }
 }

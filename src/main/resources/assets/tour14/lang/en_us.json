@@ -4,5 +4,6 @@
   "block.tour14.counter_block": "Counter Block",
   "block.tour14.filter_block": "Filter Block",
   "itemGroup.tour14": "Tour14",
-  "message.tour14.counter": "Counter: %d"
+  "message.tour14.counter": "Counter: %d",
+  "name.tour14.filter": "test"
 }

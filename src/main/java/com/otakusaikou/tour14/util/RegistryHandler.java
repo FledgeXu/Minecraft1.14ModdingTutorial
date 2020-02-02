@@ -1,9 +1,12 @@
 package com.otakusaikou.tour14.util;
 
+import com.otakusaikou.tour14.blocks.FilterBlock;
 import com.otakusaikou.tour14.blocks.ModBlocks;
+import com.otakusaikou.tour14.gui.ModGuiContainerType;
 import com.otakusaikou.tour14.items.ModItems;
 import com.otakusaikou.tour14.tileentities.ModTileEntitiesType;
 import net.minecraft.block.Block;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Properties;
@@ -38,6 +41,10 @@ public class RegistryHandler {
     public static void onTileEntitiesRegistry(RegistryEvent.Register<TileEntityType<?>> event) {
         event.getRegistry().register(ModTileEntitiesType.counterBlockTileEntityType);
         event.getRegistry().register(ModTileEntitiesType.filterBlockTileEntityType);
+    }
+    @SubscribeEvent
+    public static void onContainerRegistry(RegistryEvent.Register<ContainerType<?>> event){
+        event.getRegistry().register(ModGuiContainerType.filterBlockContainerType);
     }
 
 }
