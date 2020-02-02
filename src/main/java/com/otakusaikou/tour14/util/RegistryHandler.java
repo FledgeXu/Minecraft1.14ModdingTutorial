@@ -37,6 +37,7 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void onTileEntitiesRegistry(RegistryEvent.Register<TileEntityType<?>> event) {
         event.getRegistry().register(ModTileEntitiesType.counterBlockTileEntityType);
+        event.getRegistry().register(ModTileEntitiesType.filterBlockTileEntityType);
     }
 
 }

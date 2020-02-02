@@ -11,5 +11,5 @@ public class ModTileEntitiesType {
   public static TileEntityType<?> filterBlockTileEntityType =
       TileEntityType.Builder.create(FilterBlockTileEntity::new, ModBlocks.filterBlock)
           .build(null)
-          .setRegistryName(ModBlocks.counterBlock.getRegistryName());
+          .setRegistryName(ModBlocks.filterBlock.getRegistryName());
 }
