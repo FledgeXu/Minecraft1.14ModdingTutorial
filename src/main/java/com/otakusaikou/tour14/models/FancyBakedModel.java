@@ -1,4 +1,4 @@
-package com.otakusaikou.tour14.blocks;
+package com.otakusaikou.tour14.models;
 
 import com.otakusaikou.tour14.Tour14;
 import com.otakusaikou.tour14.tileentities.FancyBlockTileEntity;

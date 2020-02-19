@@ -1,7 +1,7 @@
 package com.otakusaikou.tour14.util;
 
 import com.otakusaikou.tour14.Tour14;
-import com.otakusaikou.tour14.blocks.FancyBakedModel;
+import com.otakusaikou.tour14.models.FancyBakedModel;
 import com.otakusaikou.tour14.blocks.ModBlocks;
 import net.minecraft.client.renderer.model.ModelResourceLocation;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
