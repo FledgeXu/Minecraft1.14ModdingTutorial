@@ -4,4 +4,5 @@ public class ModBlocks {
     public static ObsidianBlock obsidianBlock = new ObsidianBlock();
     public static CounterBlock counterBlock = new CounterBlock();
     public static FilterBlock filterBlock = new FilterBlock();
+    public static FancyBlock fancyBlock = new FancyBlock();
 }

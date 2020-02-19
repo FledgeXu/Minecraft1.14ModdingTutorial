@@ -22,6 +22,7 @@ public class RegistryHandler {
         event.getRegistry().register(ModBlocks.obsidianBlock);
         event.getRegistry().register(ModBlocks.counterBlock);
         event.getRegistry().register(ModBlocks.filterBlock);
+        event.getRegistry().register(ModBlocks.fancyBlock);
 
     }
     @SubscribeEvent
@@ -36,11 +37,15 @@ public class RegistryHandler {
         event.getRegistry().register(new BlockItem(ModBlocks.filterBlock, new Properties().group(Utils.itemGroup))
             .setRegistryName(ModBlocks.filterBlock.getRegistryName())
         );
+        event.getRegistry().register(new BlockItem(ModBlocks.fancyBlock, new Properties().group(Utils.itemGroup))
+                .setRegistryName(ModBlocks.fancyBlock.getRegistryName())
+        );
     }
     @SubscribeEvent
     public static void onTileEntitiesRegistry(RegistryEvent.Register<TileEntityType<?>> event) {
         event.getRegistry().register(ModTileEntitiesType.counterBlockTileEntityType);
         event.getRegistry().register(ModTileEntitiesType.filterBlockTileEntityType);
+        event.getRegistry().register(ModTileEntitiesType.fancyBlockTileEntityType);
     }
     @SubscribeEvent
     public static void onContainerRegistry(RegistryEvent.Register<ContainerType<?>> event){
